@@ -46,7 +46,7 @@ header p{
 
 .container{
     width:96%;
-    margin: 2em;
+    margin: 1em;
 }
 
 .row{
@@ -127,6 +127,10 @@ header p{
 }
 
 @media screen and (min-width:992px) {
+    .container{
+        margin: 3rem;
+    }
+
     .column {
         flex: 0 0 33%;
     }
