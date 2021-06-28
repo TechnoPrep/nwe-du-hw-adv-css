@@ -16,6 +16,7 @@ html{
 body{
     background-color: var(--bg-color);
     font-size: 1.5rem;
+    color: var(--color-white);
 }
 
 h1{
@@ -24,6 +25,7 @@ h1{
 
 h2 {
     font-size: 3.5rem;
+    padding-top: .5rem;
 }
 
 header{
@@ -60,51 +62,54 @@ header p{
 .column {
     flex: 0 0 33%;
     padding: 1rem;
+    transition: flex-basis 500ms ease-in-out;
     margin-bottom: 1rem;
 }
 
-.card {
-    margin: 10%;
-}
-
 .code-card {
-    border-style: dashed;
-    border-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    border: .2rem dashed var(--color-white);
+    position: relative;
+    z-index: 1;
 }
 
 .card-header {
     position: relative;
-    margin-top: -20px;
-    border-style: solid;
+    margin-top: -3rem;
     color: var(--color-pink);
-    border-color: var(--color-white);
-    width: 100%;
-}
-
-
-.grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(12, 1fr);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    background-color: var(--bg-color);
+    border: .2rem solid var(--color-white);
+    border-radius: 1rem;
+    z-index: 100;
 }
 
 .linear-gradient-background{
     background-image: linear-gradient(
-        rgba(232, 102, 236, 0.3) 0%,
-        rgba(232, 102, 236, 0.3) 100%
-
+        var(--color-drk-pink) 0%,
+        var(--color-pink) 100%
     );
+    border-radius: 1rem;
 }
 
 .code-card .code-header{
-    border-radius: 8px;
+    border-radius: 1rem;
     transition: all 0.5s ease-in-out;
+    color: var(--color-pink);
     border-color: var(--color-white);
+    padding: 1rem;
 }
 
 .code-card:hover,
 .code-card:hover .card-header{
     box-shadow: inset 0px 0px 8px
-        rgba(232, 102, 236, 1), 0 0 15px
-        rgba(232, 102, 236, 1);
+        var(--color-drk-pink), 0 0 15px
+        var(--color-pink);
 }
+
+/* https://codepen.io/thomas-eilermann/pen/grjEjE */
