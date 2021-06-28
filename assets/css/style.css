@@ -61,7 +61,7 @@ header p{
 
 .column {
     flex: 0 0 33%;
-    padding: 1rem;
+    padding: 3rem;
     transition: flex-basis 500ms ease-in-out;
     margin-bottom: 1rem;
 }
@@ -89,14 +89,6 @@ header p{
     z-index: 100;
 }
 
-.linear-gradient-background{
-    background-image: linear-gradient(
-        var(--color-drk-pink) 0%,
-        var(--color-pink) 100%
-    );
-    border-radius: 1rem;
-}
-
 .code-card .code-header{
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
@@ -105,11 +97,33 @@ header p{
     padding: 1rem;
 }
 
+.linear-gradient-background{
+    background-image: linear-gradient(
+        var(--color-drk-pink) 0%,
+        var(--color-pink) 100%
+    );
+    border-radius: 1rem;
+}
+
+.code {
+    display: flex;
+    user-select: all;
+    line-height: 2rem;
+    font-family: monospace, sans-serif;
+    flex: 0 1 auto;
+}
+
 .code-card:hover,
 .code-card:hover .card-header{
     box-shadow: inset 0px 0px 8px
         var(--color-drk-pink), 0 0 15px
         var(--color-pink);
+}
+
+@media screen and (min-width:786px) {
+    .column {
+        flex: 1 0 50%;
+    }
 }
 
 /* https://codepen.io/thomas-eilermann/pen/grjEjE */
