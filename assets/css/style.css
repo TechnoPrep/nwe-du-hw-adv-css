@@ -60,7 +60,7 @@ header p{
 }
 
 .column {
-    flex: 0 0 33%;
+    flex: 0 0 100%;
     padding: 3rem;
     transition: flex-basis 500ms ease-in-out;
     margin-bottom: 1rem;
@@ -122,7 +122,13 @@ header p{
 
 @media screen and (min-width:786px) {
     .column {
-        flex: 1 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .column {
+        flex: 0 0 33%;
     }
 }
 
