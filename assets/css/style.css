@@ -96,19 +96,11 @@ header p{
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
     color: var(--color-pink);
-
     padding: 1rem;
 }
 
-.dark-pink-bg{
-    background-image: linear-gradient(
-        var(--color-drk-pink-1) 0%,
-        var(--color-drk-pink-2) 100%
-    );
-    border-radius: 1rem;
-}
-
 .code-card pre{
+    white-space: pre-wrap;
     background-image: linear-gradient(
         var(--color-drk-pink-1) 0%,
         var(--color-drk-pink-2) 100%
