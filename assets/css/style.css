@@ -99,22 +99,19 @@ header p{
     padding: 1rem;
 }
 
-.code-card pre{
+.code{
+    display: flex;
+    align-items: center;
     white-space: pre-wrap;
+    padding: 1rem;
+    flex-grow: 1;
+    line-height: 2rem;
+    font-family: monospace, sans-serif;
     background-image: linear-gradient(
         var(--color-drk-pink-1) 0%,
         var(--color-drk-pink-2) 100%
     );
     border-radius: 1rem;
-    padding: 1rem;
-    flex-grow: 1;
-}
-
-
-.code {
-    line-height: 2rem;
-    font-family: monospace, sans-serif;
-    flex-grow: 1;
 }
 
 .code:active{
