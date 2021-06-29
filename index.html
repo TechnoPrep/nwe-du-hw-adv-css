@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">    <!-- Style Sheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     
     <!-- Style Sheets -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -30,115 +30,102 @@
         <section class="row justify-center">
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">Flexbox Row</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            Use these three properties to create a Flexbox row layout.
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
-
-                        </code>
-                    </pre>
+                    <pre class="code"><code>.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+</code></pre>
                 </figure>
             </div>
 
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">Flexbox Column</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            Use this to create a flewbox column layout.
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
-
-                        </code>
-                    </pre>
+                    <pre class="code"><code>.column{
+    display: flex;
+    flex-direction: column;
+}</code></pre>
                 </figure>
             </div>
 
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">CSS Grid Layout</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            Build a 12-column layout using CSS Grid
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
-
-                        </code>
-                    </pre>
+                    <pre class="code"><code>.grid{
+    display: grid;
+    width: 100%;
+    gride-template-columns: repeat(12, 1fr)
+}</code></pre>
                 </figure>
             </div>
 
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">Linear Gradients</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            This will create a background linear gradient form top to bottom.
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
-
-                        </code>
-                    </pre>
+                    <pre class="code"><code>.linear-gradient-background{
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+    );
+}</code></pre>
                 </figure>
             </div>
 
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">Box Transition Glow</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            Use transition and box shadows to glow on hover.
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
+                    <pre class="code"><code>.code-card .code-header{
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
 
-                        </code>
-                    </pre>
+.code-card:hover,
+.code-card:hover .card-header{
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
                 </figure>
             </div>
 
             <div class="column">
                 <figure class="code-card">
-                    <h2 class="card-header">Class Type</h2>
+                    <h2 class="card-header">Overlay Card with Title</h2>
                     <div class="code-header">
                         <p>
-                            Class Description
+                            Use position properties and negative margins to raise elements to hight than their natural starting point.
                         </p>
                     </div>
-                    <pre class="linear-gradient-background">
-                        <code class="code">
-    .class{
-        attribute: value;
-    }
-
-                        </code>
-                    </pre>
+                    <pre class="code"><code>.card-header {
+    position: relative;
+    margin-top: -3rem;
+}</code></pre>
                 </figure>
             </div>
         </section>
