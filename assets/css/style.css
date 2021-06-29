@@ -75,6 +75,7 @@ header p{
     border: .2rem dashed var(--color-white);
     position: relative;
     z-index: 1;
+    min-height: 100%;
 }
 
 .card-header {
@@ -91,7 +92,6 @@ header p{
 }
 
 .code-card .code-header{
-    position: relative;
     border-color: var(--color-white);
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
@@ -107,6 +107,7 @@ header p{
     );
     border-radius: 1rem;
     padding: 1rem;
+    flex-grow: 1;
 }
 
 
@@ -146,3 +147,5 @@ header p{
 }
 
 /* https://codepen.io/thomas-eilermann/pen/grjEjE */
+
+/* https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html */
