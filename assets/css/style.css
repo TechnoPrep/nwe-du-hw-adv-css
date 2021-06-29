@@ -1,7 +1,8 @@
 :root{
     --bg-color: #333940;
     --color-pink: rgba(232, 102, 236, 1);
-    --color-drk-pink: rgba(232, 102, 236, 0.3);
+    --color-drk-pink-1: rgba(232, 102, 236, 0.3);
+    --color-drk-pink-2: rgba(232, 102, 236, 0.6);
     --color-white: #fff;
 }
 
@@ -90,39 +91,54 @@ header p{
 }
 
 .code-card .code-header{
+    position: relative;
+    border-color: var(--color-white);
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
     color: var(--color-pink);
-    border-color: var(--color-white);
+
     padding: 1rem;
 }
 
-.linear-gradient-background{
+.dark-pink-bg{
     background-image: linear-gradient(
-        var(--color-drk-pink) 0%,
-        var(--color-pink) 100%
+        var(--color-drk-pink-1) 0%,
+        var(--color-drk-pink-2) 100%
     );
     border-radius: 1rem;
 }
 
+.code-card pre{
+    background-image: linear-gradient(
+        var(--color-drk-pink-1) 0%,
+        var(--color-drk-pink-2) 100%
+    );
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
 .code {
-    display: flex;
-    user-select: all;
     line-height: 2rem;
     font-family: monospace, sans-serif;
-    flex: 0 1 auto;
+    flex-grow: 1;
+}
+
+.code:active{
+    user-select: all;
 }
 
 .code-card:hover,
 .code-card:hover .card-header{
     box-shadow: inset 0px 0px 8px
-        var(--color-drk-pink), 0 0 15px
+        var(--color-pink), 0 0 15px
         var(--color-pink);
 }
 
 @media screen and (min-width:786px) {
     .column {
-        flex: 0 0 50%;
+        flex: 1 0 50%;
+        max-width: 50%;
     }
 }
 
@@ -133,6 +149,7 @@ header p{
 
     .column {
         flex: 0 0 33%;
+        max-width: 33%;
     }
 }
 
